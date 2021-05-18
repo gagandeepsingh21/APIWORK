@@ -46,25 +46,29 @@ form .field{
 }
 
 input[type="submit"]{
-    width: 70%;
+    width: 50%;
     height: 50px;
     border: 1px solid;
-    background: rgba(140, 0, 255, 0.767);
+    border-radius: 2px;
+    background: green;
     border-radius: 25px;
     color: white;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
     border: none;
+    opacity: 0.6;
+    transition: 0.3s
 
 }
 input[type="submit"]:hover{
-    background-color: green;
-    transition: 0.5s;
+    transition: 0.5s ;
+    opacity: 1;
+  
 }
 .mfield{
     margin-bottom: 30px;
-
+    opacity: 0.6;
 }
 
 /*updatable custom properties*/
