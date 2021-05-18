@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request,url_for,redirect
+from flask import Flask, render_template,request,url_for,redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -41,7 +41,7 @@ def insert():
         db.session.add(my_data)
         db.session.commit()
  
-        print("Data Inserted Successfully")
+        flash("Message sent Successfully")
  
         return render_template("contact.html")
       
